@@ -24,7 +24,7 @@ CAcceptor* g_acceptor = new CAcceptor;
 #if USE_GTK
 
 #include <cairo.h>
-#include "/glib-2.16.1/glibconfig.h"
+#include "glibconfig.h"
 #include <glib.h>
 #include <gtk/gtk.h>
 

@@ -4,4 +4,4 @@
 
 USER_OBJS :=
 
-LIBS := -lgtk-x11-2.0 -lrt -lMPOST_Linux -lpthread
+LIBS := -L../../MPOST_Linux/Debug -lgtk-x11-2.0 -lrt -lMPOST_Linux -lpthread
