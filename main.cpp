@@ -954,7 +954,7 @@ int main(int argc, char *argv[])
     gtk_layout_put(layout, gtk_label_new("Port"), 0, 120);  
     gtk_layout_put(layout, GTK_WIDGET(portNameEntry), 0, 200);  
     gtk_widget_show(GTK_WIDGET(portNameEntry));
-    gtk_entry_set_text(GTK_ENTRY(portNameEntry), "/dev/ttyS0");
+    gtk_entry_set_text(GTK_ENTRY(portNameEntry), "/dev/ttyUSB0");
     
     
     
@@ -1042,7 +1042,7 @@ int main(int argc, char *argv[])
         cin >> s;
         
         if (s == "o")
-        	g_acceptor->Open("/dev/ttyS0", A);
+        	g_acceptor->Open("/dev/ttyUSB0", A);
         
         if (s == "c")
         	g_acceptor->Close();
